@@ -138,56 +138,97 @@ export default function HeroScroll() {
     }, []);
 
     return (
-        <div ref={containerRef} className="relative h-[800vh] w-full bg-black">
+        <div ref={containerRef} className="relative h-[800vh] w-full bg-[var(--background)]">
             {/* The Cinematic Canvas */}
             <canvas
                 ref={canvasRef}
-                className="fixed top-0 left-0 w-full h-full z-0 object-cover opacity-80" // Translucency
+                className="fixed top-0 left-0 w-full h-full z-0 object-cover opacity-60" // Slightly more subtle for the navy theme
             />
 
             {/* 1. Hero Overlay */}
-            <div ref={heroTextRef} className="fixed top-0 left-0 w-full h-full z-10 flex flex-col items-center justify-center pointer-events-none mix-blend-difference text-white">
-                <h1 className="text-[12vw] font-bold tracking-tighter leading-none">
+            <div ref={heroTextRef} className="fixed top-0 left-0 w-full h-full z-10 flex flex-col items-center justify-center pointer-events-none text-white px-4">
+                <div className="trusted-badge mb-8 scale-90 md:scale-100">
+                    <div className="avatar-stack">
+                        <img src="https://i.pravatar.cc/100?u=1" alt="User" />
+                        <img src="https://i.pravatar.cc/100?u=2" alt="User" />
+                        <img src="https://i.pravatar.cc/100?u=3" alt="User" />
+                    </div>
+                    <span className="text-xs font-medium text-white/70 tracking-tight">Trusted by 100+ Founders</span>
+                </div>
+
+                <h1 className="text-[15vw] md:text-[12vw] font-bold tracking-tighter leading-none mb-4">
                     STRAVON
                 </h1>
-                <p className="text-xl md:text-2xl mt-4 font-light tracking-tight">
-                    The Architecture of Intelligence
+                <p className="text-lg md:text-3xl font-light tracking-tight max-w-2xl text-center text-white/80">
+                    We build apps. <span className="font-medium text-white">10x fast.</span> <span className="font-medium text-white">100x better.</span>
                 </p>
+
+                <div className="mt-12 flex flex-col items-center animate-bounce opacity-50">
+                    <p className="text-[10px] uppercase tracking-[0.3em] font-medium mb-2">Scroll to explore</p>
+                    <div className="w-px h-12 bg-gradient-to-b from-white to-transparent"></div>
+                </div>
             </div>
 
             {/* 2. Mission Overlay */}
-            <div ref={missionRef} className="fixed top-0 left-0 w-full h-full z-10 flex items-center justify-center pointer-events-none opacity-0 invisible">
-                <div className="backdrop-blur-md bg-white/10 border border-white/10 p-12 md:p-24 rounded-3xl max-w-4xl text-center mx-4 text-white">
-                    <h2 className="text-4xl md:text-6xl font-bold mb-8">Building the Next Generation <br /> of <span className="text-titanium">AI</span>.</h2>
-                    <p className="text-xl md:text-3xl font-light text-gray-200">
-                        We engineer consumer apps and scale AI infrastructure for businesses.
+            <div ref={missionRef} className="fixed top-0 left-0 w-full h-full z-10 flex items-center justify-center pointer-events-none opacity-0 invisible px-4">
+                <div className="glass-morphism p-8 md:p-20 rounded-[2.5rem] max-w-4xl text-center text-white">
+                    <h2 className="text-4xl md:text-7xl font-bold mb-6 tracking-tighter">
+                        The 7-Day <br /> Standard.
+                    </h2>
+                    <p className="text-lg md:text-3xl font-light text-white/70 leading-relaxed">
+                        From vision to production in just 7 days. <br />
+                        Complex feats in 14. We don't just build, <br />
+                        <span className="text-white font-medium italic underline decoration-blue-500 underline-offset-8">we outpace.</span>
                     </p>
                 </div>
             </div>
 
             {/* 3. Services Overlay */}
-            <div ref={servicesRef} className="fixed top-0 left-0 w-full h-full z-10 flex flex-col items-center justify-center pointer-events-none opacity-0 invisible text-white">
-                <h3 className="text-2xl font-light uppercase tracking-widest mb-12 text-gray-400">Our Services</h3>
-                <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
-                    {["AI Scaling", "Consumer Apps", "3D Web", "Infrastructure"].map((item, i) => (
-                        <div key={i} className="service-item text-center">
-                            <div className="text-5xl md:text-7xl font-bold tracking-tighter mb-2">{item}</div>
-                            <div className="w-full h-px bg-white/20"></div>
+            <div ref={servicesRef} className="fixed top-0 left-0 w-full h-full z-10 flex flex-col items-center justify-center pointer-events-none opacity-0 invisible text-white px-4">
+                <h3 className="text-sm font-medium uppercase tracking-[0.4em] mb-16 text-white/40">Our Efficiency</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-24 md:gap-y-16 max-w-6xl">
+                    {[
+                        { title: "7 Days", desc: "Average build time" },
+                        { title: "50k - 80k", desc: "Ultra affordable pricing" },
+                        { title: "10x Fast", desc: "Unmatched development speed" },
+                        { title: "Premium", desc: "100x better working apps" }
+                    ].map((item, i) => (
+                        <div key={i} className="service-item flex flex-col items-center md:items-start">
+                            <div className="text-5xl md:text-8xl font-bold tracking-tighter mb-2">{item.title}</div>
+                            <div className="text-lg md:text-xl text-white/50 font-light">{item.desc}</div>
+                            <div className="w-full h-px bg-white/10 mt-4"></div>
                         </div>
                     ))}
                 </div>
             </div>
 
             {/* 4. CTA Overlay */}
-            <div ref={ctaRef} className="fixed top-0 left-0 w-full h-full z-10 flex flex-col items-center justify-center pointer-events-auto opacity-0 invisible text-white">
-                <h2 className="text-6xl md:text-9xl font-bold tracking-tighter mb-10 text-center">
-                    Defy <span className="text-titanium">Gravity</span>
+            <div ref={ctaRef} className="fixed top-0 left-0 w-full h-full z-10 flex flex-col items-center justify-center pointer-events-auto opacity-0 invisible text-white px-4 text-center">
+                <h2 className="text-6xl md:text-[8rem] font-bold tracking-tighter mb-4 leading-[0.9]">
+                    Build Your <br />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Application</span>
                 </h2>
-                <button className="bg-white text-black px-12 py-6 rounded-full text-2xl font-medium hover:scale-105 transition-transform duration-300">
-                    Let's Build
-                </button>
-                <div className="absolute bottom-10 text-sm text-gray-500 font-mono">
-                    © {new Date().getFullYear()} Stravon Agency
+                <p className="text-xl md:text-2xl font-light text-white/60 mb-12 max-w-xl">
+                    Ultra affordable. Professional execution. <br />
+                    Ready in 7 days.
+                </p>
+
+                <a
+                    href="https://wa.me/918968037352?text=Hey%20i%20want%20to%20build%20my%20application%0A%0AI'm-%20%0AI'm%20looking%20to%20build-%20%0AMy%20budget-%20"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative bg-white text-[#0A1F44] px-12 py-6 rounded-2xl text-2xl font-bold hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center gap-4 shadow-[0_0_40px_rgba(255,255,255,0.2)]"
+                >
+                    Start Inquiring Direct
+                    <svg className="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+
+                <div className="absolute bottom-10 flex flex-col items-center gap-2">
+                    <p className="text-xs text-white/30 font-mono tracking-widest uppercase">
+                        © {new Date().getFullYear()} Stravon Agency — Modern Architecture
+                    </p>
                 </div>
             </div>
 

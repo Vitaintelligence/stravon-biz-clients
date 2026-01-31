@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --background: #F5F5F7;
-  --foreground: #1D1D1F;
+  --background: #0A1F44;
+  --foreground: #FFFFFF;
+  --accent: #2196F3;
+  --glass: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -16,13 +19,33 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.glass-morphism {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+.trusted-badge {
+  @apply flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md;
+}
+
+.avatar-stack {
+  @apply flex -space-x-2;
+}
+
+.avatar-stack img {
+  @apply w-6 h-6 rounded-full border-2 border-[#0A1F44] object-cover;
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
