@@ -56,7 +56,7 @@ export default function Testimonials() {
         <section
             ref={sectionRef}
             id="reviews"
-            className="relative py-20 px-6 z-10 bg-black"
+            className="relative py-20 px-6 z-10"
         >
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
@@ -76,7 +76,7 @@ export default function Testimonials() {
                     {testimonials.map((testimonial, index) => (
                         <div
                             key={index}
-                            className="testimonial-card group relative p-8 border border-white/10 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300"
+                            className="testimonial-card group relative p-8 border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300"
                         >
                             <div className="relative z-10">
                                 {/* Rating */}

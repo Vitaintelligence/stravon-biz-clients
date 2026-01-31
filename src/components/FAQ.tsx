@@ -34,7 +34,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="relative py-20 px-6 z-10 bg-black">
+    <section className="relative py-20 px-6 z-10">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-8">
           <span className="inline-block px-4 py-2 border border-white/20 bg-white/5 text-white text-xs font-semibold mb-6 uppercase tracking-widest">

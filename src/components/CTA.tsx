@@ -32,10 +32,10 @@ export default function CTA() {
     return (
         <section
             ref={sectionRef}
-            className="relative py-20 px-6 z-10 bg-black"
+            className="relative py-20 px-6 z-10"
         >
             <div className="max-w-5xl mx-auto">
-                <div className="cta-content relative p-12 md:p-20 border border-white/20 bg-white/5 backdrop-blur-xl">
+                <div className="cta-content relative p-12 md:p-20 border border-white/20 bg-white/5">
                     <div className="relative z-10 text-center">
                         {/* Urgency Badge */}
                         <div className="inline-flex items-center gap-2 px-4 py-2 border border-white/30 bg-white/10 mb-8">
@@ -71,7 +71,7 @@ export default function CTA() {
                                 href="https://calendly.com/stravon"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-full sm:w-auto px-10 py-5 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold text-lg hover:bg-white/20 transition-all duration-200 flex items-center justify-center gap-3"
+                                className="w-full sm:w-auto px-10 py-5 bg-white/10 border border-white/20 text-white font-semibold text-lg hover:bg-white/20 transition-all duration-200 flex items-center justify-center gap-3"
                             >
                                 <Calendar className="w-5 h-5" />
                                 Book a Call

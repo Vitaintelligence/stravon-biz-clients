@@ -32,7 +32,7 @@ export default function Story() {
         <section
             ref={sectionRef}
             id="story"
-            className="relative py-20 px-6 z-10 bg-black"
+            className="relative py-20 px-6 z-10"
         >
             <div className="max-w-4xl mx-auto">
                 <div className="story-content text-center">

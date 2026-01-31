@@ -70,7 +70,7 @@ export default function Pricing() {
         <section
             ref={sectionRef}
             id="pricing"
-            className="relative py-20 px-6 z-10 bg-black"
+            className="relative py-20 px-6 z-10"
         >
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
@@ -93,7 +93,7 @@ export default function Pricing() {
                     {pricingPlans.map((plan, index) => (
                         <div
                             key={index}
-                            className={`pricing-card relative p-10 backdrop-blur-sm transition-all duration-300 ${plan.popular
+                            className={`pricing-card relative p-10 transition-all duration-300 ${plan.popular
                                 ? "bg-white/10 border-2 border-white"
                                 : "bg-white/5 border border-white/10"
                                 }`}

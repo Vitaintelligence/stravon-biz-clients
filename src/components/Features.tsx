@@ -59,7 +59,7 @@ export default function Features() {
         <section
             ref={sectionRef}
             id="features"
-            className="relative py-20 px-6 z-10 bg-black"
+            className="relative py-20 px-6 z-10"
         >
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
