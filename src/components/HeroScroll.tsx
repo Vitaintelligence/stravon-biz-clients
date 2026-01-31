@@ -147,25 +147,45 @@ export default function HeroScroll() {
 
             {/* 1. Hero Overlay */}
             <div ref={heroTextRef} className="fixed top-0 left-0 w-full h-full z-10 flex flex-col items-center justify-center pointer-events-none text-white px-4">
-                <div className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md mb-8 scale-90 md:scale-100">
+                <div className="flex items-center gap-3 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-md mb-8 animate-in fade-in slide-in-from-top-4 duration-1000">
                     <div className="flex -space-x-2">
-                        <img className="w-6 h-6 rounded-full border-2 border-black object-cover" src="https://i.pravatar.cc/100?u=1" alt="User" />
-                        <img className="w-6 h-6 rounded-full border-2 border-black object-cover" src="https://i.pravatar.cc/100?u=2" alt="User" />
-                        <img className="w-6 h-6 rounded-full border-2 border-black object-cover" src="https://i.pravatar.cc/100?u=3" alt="User" />
+                        <img className="w-6 h-6 rounded-full border-2 border-black object-cover" src="https://i.pravatar.cc/100?u=4" alt="Founder" />
+                        <img className="w-6 h-6 rounded-full border-2 border-black object-cover" src="https://i.pravatar.cc/100?u=5" alt="Founder" />
+                        <img className="w-6 h-6 rounded-full border-2 border-black object-cover" src="https://i.pravatar.cc/100?u=6" alt="Founder" />
                     </div>
-                    <span className="text-xs font-medium text-white/70 tracking-tight">Trusted by 100+ Founders</span>
+                    <span className="text-[10px] md:text-xs font-semibold text-white/80 tracking-widest uppercase italic">The Founders' Choice</span>
                 </div>
 
-                <h1 className="text-[15vw] md:text-[12vw] font-bold tracking-tighter leading-none mb-4">
+                <h1 className="text-[18vw] md:text-[14vw] font-black tracking-tighter leading-none mb-2">
                     STRAVON
                 </h1>
-                <p className="text-lg md:text-3xl font-light tracking-tight max-w-2xl text-center text-white/80">
-                    We build apps. <span className="font-medium text-white">10x fast.</span> <span className="font-medium text-white">100x better.</span>
-                </p>
 
-                <div className="mt-12 flex flex-col items-center animate-bounce opacity-50">
-                    <p className="text-[10px] uppercase tracking-[0.3em] font-medium mb-2">Scroll to explore</p>
-                    <div className="w-px h-12 bg-gradient-to-b from-white to-transparent"></div>
+                <div className="flex flex-col items-center space-y-4 max-w-4xl w-full">
+                    <p className="text-xl md:text-4xl font-medium tracking-tight text-center text-white italic">
+                        "We build apps and stuff. <span className="text-white/40 not-italic">Fast.</span>"
+                    </p>
+
+                    <div className="h-px w-24 bg-white/20"></div>
+
+                    <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-sm md:text-lg font-light tracking-[0.2em] uppercase text-white/60">
+                        <span className="flex items-center gap-2">
+                            <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></span>
+                            7 Day Delivery
+                        </span>
+                        <span className="flex items-center gap-2">
+                            <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
+                            ₹50k - ₹80k
+                        </span>
+                        <span className="flex items-center gap-2">
+                            <span className="w-1.5 h-1.5 rounded-full bg-purple-500 animate-pulse"></span>
+                            100x Better
+                        </span>
+                    </div>
+                </div>
+
+                <div className="absolute bottom-20 flex flex-col items-center animate-bounce opacity-30">
+                    <p className="text-[8px] uppercase tracking-[0.5em] font-bold mb-4">Begin Journey</p>
+                    <div className="w-px h-16 bg-gradient-to-b from-white to-transparent"></div>
                 </div>
             </div>
 
