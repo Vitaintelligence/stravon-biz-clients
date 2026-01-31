@@ -13,26 +13,24 @@ export default function Preloader() {
             onComplete: () => setComplete(true),
         });
 
-        // Pulse
         tl.to(textRef.current, {
             opacity: 0.5,
-            duration: 0.8,
+            duration: 0.6,
             yoyo: true,
             repeat: 1,
             ease: "power2.inOut",
         })
-            // Split reveal
             .to(textRef.current, {
-                scale: 1.5,
+                scale: 1.2,
                 opacity: 0,
-                duration: 0.5,
+                duration: 0.4,
                 ease: "power3.in",
             })
             .to(containerRef.current, {
-                height: 0,
-                duration: 1,
-                ease: "expo.inOut",
-            }, "-=0.3");
+                opacity: 0,
+                duration: 0.6,
+                ease: "power2.inOut",
+            }, "-=0.2");
 
     }, []);
 

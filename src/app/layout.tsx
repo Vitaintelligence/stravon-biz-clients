@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-
 export const metadata: Metadata = {
-  title: "Stravon | The Architecture of Intelligence",
-  description: "Building the Next Generation of AI.",
+  title: "Stravon | Ship Your App in 7 Days",
+  description: "Production-ready applications delivered in 7 days. Modern tech stack, fixed pricing ₹50k-₹80k. 10x faster than traditional agencies.",
 };
 
 export default function RootLayout({
@@ -16,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`}>{children}</body>
+      <body className="antialiased">{children}</body>
     </html >
   );
 }
