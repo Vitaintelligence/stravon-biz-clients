@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --background: #0A1F44;
@@ -17,24 +15,6 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.glass-morphism {
-  background: var(--glass);
-  backdrop-filter: blur(12px);
-  border: 1px solid var(--glass-border);
-}
-
-.trusted-badge {
-  @apply flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md;
-}
-
-.avatar-stack {
-  @apply flex -space-x-2;
-}
-
-.avatar-stack img {
-  @apply w-6 h-6 rounded-full border-2 border-[#0A1F44] object-cover;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

@@ -147,11 +147,11 @@ export default function HeroScroll() {
 
             {/* 1. Hero Overlay */}
             <div ref={heroTextRef} className="fixed top-0 left-0 w-full h-full z-10 flex flex-col items-center justify-center pointer-events-none text-white px-4">
-                <div className="trusted-badge mb-8 scale-90 md:scale-100">
-                    <div className="avatar-stack">
-                        <img src="https://i.pravatar.cc/100?u=1" alt="User" />
-                        <img src="https://i.pravatar.cc/100?u=2" alt="User" />
-                        <img src="https://i.pravatar.cc/100?u=3" alt="User" />
+                <div className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md mb-8 scale-90 md:scale-100">
+                    <div className="flex -space-x-2">
+                        <img className="w-6 h-6 rounded-full border-2 border-[#0A1F44] object-cover" src="https://i.pravatar.cc/100?u=1" alt="User" />
+                        <img className="w-6 h-6 rounded-full border-2 border-[#0A1F44] object-cover" src="https://i.pravatar.cc/100?u=2" alt="User" />
+                        <img className="w-6 h-6 rounded-full border-2 border-[#0A1F44] object-cover" src="https://i.pravatar.cc/100?u=3" alt="User" />
                     </div>
                     <span className="text-xs font-medium text-white/70 tracking-tight">Trusted by 100+ Founders</span>
                 </div>
@@ -171,7 +171,7 @@ export default function HeroScroll() {
 
             {/* 2. Mission Overlay */}
             <div ref={missionRef} className="fixed top-0 left-0 w-full h-full z-10 flex items-center justify-center pointer-events-none opacity-0 invisible px-4">
-                <div className="glass-morphism p-8 md:p-20 rounded-[2.5rem] max-w-4xl text-center text-white">
+                <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-8 md:p-20 rounded-[2.5rem] max-w-4xl text-center text-white">
                     <h2 className="text-4xl md:text-7xl font-bold mb-6 tracking-tighter">
                         The 7-Day <br /> Standard.
                     </h2>
