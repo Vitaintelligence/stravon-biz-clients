@@ -30,18 +30,25 @@ export default function HeroScroll() {
 
         const render = () => {
             const img = images[frames.currentIndex];
-            // CRITICAL FIX: Ensure image is fully loaded, exists, and has a non-zero width (not broken)
+            // Safe check for broken or unloaded images
             if (!img || !img.complete || img.naturalWidth === 0) return;
 
+            // Update canvas dimensions to match the physical viewport
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
 
-            const scale = Math.max(canvas.width / img.width, canvas.height / img.height);
-            const x = (canvas.width / 2) - (img.width / 2) * scale;
-            const y = (canvas.height / 2) - (img.height / 2) * scale;
+            const imgWidth = img.naturalWidth;
+            const imgHeight = img.naturalHeight;
+
+            // Calculate "cover" scale factor
+            const scale = Math.max(canvas.width / imgWidth, canvas.height / imgHeight);
+
+            // Calculate centered position
+            const x = (canvas.width - imgWidth * scale) / 2;
+            const y = (canvas.height - imgHeight * scale) / 2;
 
             context.clearRect(0, 0, canvas.width, canvas.height);
-            context.drawImage(img, x, y, img.width * scale, img.height * scale);
+            context.drawImage(img, x, y, imgWidth * scale, imgHeight * scale);
         };
 
         let loadedCount = 0;
@@ -146,7 +153,7 @@ export default function HeroScroll() {
             {/* The Cinematic Canvas */}
             <canvas
                 ref={canvasRef}
-                className="fixed top-0 left-0 w-full h-full z-0 object-cover opacity-60" // Slightly more subtle for the navy theme
+                className="fixed top-0 left-0 w-full h-full z-0 opacity-60"
             />
 
             {/* 1. Hero Overlay */}
