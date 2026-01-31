@@ -30,7 +30,8 @@ export default function HeroScroll() {
 
         const render = () => {
             const img = images[frames.currentIndex];
-            if (!img || !img.complete) return;
+            // CRITICAL FIX: Ensure image is fully loaded, exists, and has a non-zero width (not broken)
+            if (!img || !img.complete || img.naturalWidth === 0) return;
 
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
@@ -40,7 +41,6 @@ export default function HeroScroll() {
             const y = (canvas.height / 2) - (img.height / 2) * scale;
 
             context.clearRect(0, 0, canvas.width, canvas.height);
-            // Optional: Add a slight blur or filter here if needed via context, but CSS opacity is faster
             context.drawImage(img, x, y, img.width * scale, img.height * scale);
         };
 
@@ -149,9 +149,9 @@ export default function HeroScroll() {
             <div ref={heroTextRef} className="fixed top-0 left-0 w-full h-full z-10 flex flex-col items-center justify-center pointer-events-none text-white px-4">
                 <div className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md mb-8 scale-90 md:scale-100">
                     <div className="flex -space-x-2">
-                        <img className="w-6 h-6 rounded-full border-2 border-[#0A1F44] object-cover" src="https://i.pravatar.cc/100?u=1" alt="User" />
-                        <img className="w-6 h-6 rounded-full border-2 border-[#0A1F44] object-cover" src="https://i.pravatar.cc/100?u=2" alt="User" />
-                        <img className="w-6 h-6 rounded-full border-2 border-[#0A1F44] object-cover" src="https://i.pravatar.cc/100?u=3" alt="User" />
+                        <img className="w-6 h-6 rounded-full border-2 border-black object-cover" src="https://i.pravatar.cc/100?u=1" alt="User" />
+                        <img className="w-6 h-6 rounded-full border-2 border-black object-cover" src="https://i.pravatar.cc/100?u=2" alt="User" />
+                        <img className="w-6 h-6 rounded-full border-2 border-black object-cover" src="https://i.pravatar.cc/100?u=3" alt="User" />
                     </div>
                     <span className="text-xs font-medium text-white/70 tracking-tight">Trusted by 100+ Founders</span>
                 </div>
@@ -217,7 +217,7 @@ export default function HeroScroll() {
                     href="https://wa.me/918968037352?text=Hey%20i%20want%20to%20build%20my%20application%0A%0AI'm-%20%0AI'm%20looking%20to%20build-%20%0AMy%20budget-%20"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group relative bg-white text-[#0A1F44] px-12 py-6 rounded-2xl text-2xl font-bold hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center gap-4 shadow-[0_0_40px_rgba(255,255,255,0.2)]"
+                    className="group relative bg-white text-black px-12 py-6 rounded-2xl text-2xl font-bold hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center gap-4 shadow-[0_0_40px_rgba(255,255,255,0.2)]"
                 >
                     Start Inquiring Direct
                     <svg className="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
