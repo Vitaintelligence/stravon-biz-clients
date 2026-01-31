@@ -35,10 +35,10 @@ export default function CTA() {
             className="relative py-20 px-6 z-10"
         >
             <div className="max-w-5xl mx-auto">
-                <div className="cta-content relative p-12 md:p-20 border border-white/20 bg-white/5">
+                <div className="cta-content relative p-12 md:p-20 border border-white/20 bg-black/80">
                     <div className="relative z-10 text-center">
                         {/* Urgency Badge */}
-                        <div className="inline-flex items-center gap-2 px-4 py-2 border border-white/30 bg-white/10 mb-8">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 border border-white/30 bg-black/80 mb-8">
                             <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
                             <span className="text-white text-sm font-semibold uppercase tracking-wide">Only 3 Slots Left This Month</span>
                         </div>

@@ -58,7 +58,7 @@ export default function Process() {
     <section ref={sectionRef} className="relative py-20 px-6 z-10">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
-          <span className="inline-block px-4 py-2 border border-white/20 bg-white/5 text-white text-xs font-semibold mb-6 uppercase tracking-widest">
+          <span className="inline-block px-4 py-2 border border-white/20 bg-black/80 text-white text-xs font-semibold mb-6 uppercase tracking-widest">
             OUR PROCESS
           </span>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
@@ -75,13 +75,13 @@ export default function Process() {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="process-step relative p-6 border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300"
+              className="process-step relative p-6 border border-white/20 bg-black/80 hover:bg-black/90 transition-all duration-300"
             >
               <div className="text-4xl font-bold text-white/10 mb-3">
                 {step.number}
               </div>
               <div className="mb-2">
-                <span className="inline-block px-2 py-1 border border-white/20 bg-white/5 text-white text-xs font-bold uppercase tracking-wide">
+                <span className="inline-block px-2 py-1 border border-white/20 bg-black/60 text-white text-xs font-bold uppercase tracking-wide">
                   {step.duration}
                 </span>
               </div>

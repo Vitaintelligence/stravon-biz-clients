@@ -91,7 +91,7 @@ export default function Portfolio() {
     <section ref={sectionRef} className="relative py-20 px-6 z-10">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
-          <span className="inline-block px-4 py-2 border border-white/20 bg-white/5 text-white text-xs font-semibold mb-6 uppercase tracking-widest">
+          <span className="inline-block px-4 py-2 border border-white/20 bg-black/80 text-white text-xs font-semibold mb-6 uppercase tracking-widest">
             OUR EXPERTISE
           </span>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
@@ -111,7 +111,7 @@ export default function Portfolio() {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="portfolio-card group relative overflow-hidden border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300 cursor-pointer"
+              className="portfolio-card group relative overflow-hidden border border-white/20 bg-black/80 hover:bg-black/90 transition-all duration-300 cursor-pointer"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
@@ -142,7 +142,7 @@ export default function Portfolio() {
                   {project.tech.map((tech, i) => (
                     <span
                       key={i}
-                      className="px-2 py-1 border border-white/20 bg-white/5 text-white text-xs font-medium"
+                      className="px-2 py-1 border border-white/20 bg-black/60 text-white text-xs font-medium"
                     >
                       {tech}
                     </span>

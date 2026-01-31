@@ -64,7 +64,7 @@ export default function Features() {
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-8">
-                    <span className="inline-block px-4 py-2 border border-white/20 bg-white/5 text-white text-xs font-semibold mb-6 uppercase tracking-widest">
+                    <span className="inline-block px-4 py-2 border border-white/20 bg-black/80 text-white text-xs font-semibold mb-6 uppercase tracking-widest">
                         WHY STRAVON
                     </span>
                     <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
@@ -93,7 +93,7 @@ export default function Features() {
                                 {/* Content */}
                                 <div className="flex items-start justify-between mb-3">
                                     <h3 className="text-xl font-bold text-white">{feature.title}</h3>
-                                    <span className="px-2 py-1 border border-white/20 bg-white/5 text-white text-xs font-bold uppercase tracking-wide">
+                                    <span className="px-2 py-1 border border-white/20 bg-black/60 text-white text-xs font-bold uppercase tracking-wide">
                                         {feature.stat}
                                     </span>
                                 </div>

@@ -36,7 +36,7 @@ export default function Story() {
         >
             <div className="max-w-4xl mx-auto">
                 <div className="story-content text-center">
-                    <span className="inline-block px-4 py-2 border border-white/20 bg-white/5 text-white text-xs font-semibold mb-8 uppercase tracking-widest">
+                    <span className="inline-block px-4 py-2 border border-white/20 bg-black/80 text-white text-xs font-semibold mb-8 uppercase tracking-widest">
                         OUR STORY
                     </span>
 
