@@ -51,7 +51,11 @@ export default function HeroScroll() {
             img.src = `/frames/${frameId}.jpg`;
             img.onload = () => {
                 loadedCount++;
-                if (loadedCount === 1) render();
+                // If this is the first frame (0001), render it immediately
+                if (frameId === "0001") {
+                    frames.currentIndex = 0;
+                    render();
+                }
             };
             images.push(img);
         }
