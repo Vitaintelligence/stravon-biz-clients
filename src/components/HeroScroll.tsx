@@ -24,31 +24,51 @@ export default function HeroScroll() {
         const context = canvas.getContext("2d");
         if (!context) return;
 
+        // --- Handle Canvas Sizing (Sharpness & Ratio) ---
+        const resizeCanvas = () => {
+            const dpr = window.devicePixelRatio || 1;
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+
+            // Set actual size (physical pixels for sharpness)
+            canvas.width = width * dpr;
+            canvas.height = height * dpr;
+            // Set display size (logical pixels)
+            canvas.style.width = `${width}px`;
+            canvas.style.height = `${height}px`;
+
+            // Reset and apply DPR scale
+            context.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+            // Re-render current frame on resize
+            render();
+        };
+
         // --- Image Loading ---
         const images: HTMLImageElement[] = [];
         const frames = { currentIndex: 0 };
 
         const render = () => {
             const img = images[frames.currentIndex];
-            // Safe check for broken or unloaded images
             if (!img || !img.complete || img.naturalWidth === 0) return;
 
-            // Update canvas dimensions to match the physical viewport
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-
+            const logicalWidth = window.innerWidth;
+            const logicalHeight = window.innerHeight;
             const imgWidth = img.naturalWidth;
             const imgHeight = img.naturalHeight;
 
-            // Calculate "cover" scale factor
-            const scale = Math.max(canvas.width / imgWidth, canvas.height / imgHeight);
+            // 'Contain' logic: Full frame visibility without stretching or cropping
+            const scale = Math.min(logicalWidth / imgWidth, logicalHeight / imgHeight);
 
-            // Calculate centered position
-            const x = (canvas.width - imgWidth * scale) / 2;
-            const y = (canvas.height - imgHeight * scale) / 2;
+            const drawWidth = imgWidth * scale;
+            const drawHeight = imgHeight * scale;
 
-            context.clearRect(0, 0, canvas.width, canvas.height);
-            context.drawImage(img, x, y, imgWidth * scale, imgHeight * scale);
+            // Center the image
+            const x = (logicalWidth - drawWidth) / 2;
+            const y = (logicalHeight - drawHeight) / 2;
+
+            context.clearRect(0, 0, logicalWidth, logicalHeight);
+            context.drawImage(img, x, y, drawWidth, drawHeight);
         };
 
         let loadedCount = 0;
@@ -58,7 +78,6 @@ export default function HeroScroll() {
             img.src = `/frames/${frameId}.jpg`;
             img.onload = () => {
                 loadedCount++;
-                // If this is the first frame (0001), render it immediately
                 if (frameId === "0001") {
                     frames.currentIndex = 0;
                     render();
@@ -73,15 +92,14 @@ export default function HeroScroll() {
                 trigger: containerRef.current,
                 start: "top top",
                 end: "bottom bottom",
-                scrub: 1, // Weighted smooth scrub
+                scrub: 1,
                 pin: true,
                 onUpdate: (self) => {
-                    // Video Frame Logic
                     const frameIndex = Math.min(
                         FRAME_COUNT - 1,
                         Math.floor(self.progress * (FRAME_COUNT - 1))
                     );
-                    if (images[frameIndex]?.complete) {
+                    if (images[frameIndex]?.complete && images[frameIndex].naturalWidth !== 0) {
                         frames.currentIndex = frameIndex;
                         requestAnimationFrame(render);
                     }
@@ -123,12 +141,7 @@ export default function HeroScroll() {
         // Stagger items inside services?
         const serviceItems = servicesRef.current?.querySelectorAll(".service-item");
         if (serviceItems) {
-            tl.from(serviceItems, {
-                y: 30,
-                opacity: 0,
-                stagger: 0.5,
-                duration: 1
-            }, 7.5);
+            tl.from(serviceItems, { y: 30, opacity: 0, stagger: 0.5, duration: 1 }, 7.5);
         }
         tl.to(servicesRef.current, { autoAlpha: 0, duration: 2 }, 12);
 
@@ -139,12 +152,13 @@ export default function HeroScroll() {
             13
         );
 
-
-        window.addEventListener("resize", render);
+        // Setup resize handling
+        resizeCanvas();
+        window.addEventListener("resize", resizeCanvas);
 
         return () => {
             tl.kill();
-            window.removeEventListener("resize", render);
+            window.removeEventListener("resize", resizeCanvas);
         };
     }, []);
 
