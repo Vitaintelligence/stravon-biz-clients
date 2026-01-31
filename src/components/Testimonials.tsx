@@ -61,7 +61,7 @@ export default function Testimonials() {
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-8">
-                    <span className="inline-block px-4 py-2 border border-white/20 bg-black/80 text-white text-xs font-semibold mb-6 uppercase tracking-widest">
+                    <span className="inline-block px-4 py-2 border border-white/20 bg-black text-white text-xs font-semibold mb-6 uppercase tracking-widest">
                         CLIENT STORIES
                     </span>
                     <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
@@ -76,7 +76,7 @@ export default function Testimonials() {
                     {testimonials.map((testimonial, index) => (
                         <div
                             key={index}
-                            className="testimonial-card group relative p-8 border border-white/20 bg-black/80 hover:bg-black/90 transition-all duration-300"
+                            className="testimonial-card group relative p-8 border border-white/20 bg-black hover:bg-black transition-all duration-300"
                         >
                             <div className="relative z-10">
                                 {/* Rating */}

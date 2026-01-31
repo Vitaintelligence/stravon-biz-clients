@@ -75,7 +75,7 @@ export default function Pricing() {
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-8">
-                    <span className="inline-block px-4 py-2 border border-white/20 bg-black/80 text-white text-xs font-semibold mb-6 uppercase tracking-widest">
+                    <span className="inline-block px-4 py-2 border border-white/20 bg-black text-white text-xs font-semibold mb-6 uppercase tracking-widest">
                         TRANSPARENT PRICING
                     </span>
                     <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
@@ -94,8 +94,8 @@ export default function Pricing() {
                         <div
                             key={index}
                             className={`pricing-card relative p-10 transition-all duration-300 ${plan.popular
-                                ? "bg-black/90 border-2 border-white"
-                                : "bg-black/80 border border-white/20"
+                                ? "bg-black border-2 border-white"
+                                : "bg-black border border-white/20"
                                 }`}
                         >
                             {/* Popular Badge */}
@@ -147,7 +147,7 @@ export default function Pricing() {
 
                 {/* Money Back Guarantee */}
                 <div className="mt-16 text-center">
-                    <div className="inline-flex items-center gap-3 px-6 py-3 border border-white/20 bg-black/80">
+                    <div className="inline-flex items-center gap-3 px-6 py-3 border border-white/20 bg-black">
                         <span className="text-white font-semibold">100% Satisfaction Guaranteed or Full Refund</span>
                     </div>
                 </div>
