@@ -55,7 +55,7 @@ export default function Process() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative py-20 px-6 z-10">
+    <section ref={sectionRef} className="relative py-20 px-6 z-10 bg-black/40">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
           <span className="inline-block px-4 py-2 border border-white/20 bg-black text-white text-xs font-semibold mb-6 uppercase tracking-widest">

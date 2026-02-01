@@ -56,7 +56,7 @@ export default function Testimonials() {
         <section
             ref={sectionRef}
             id="reviews"
-            className="relative py-20 px-6 z-10"
+            className="relative py-20 px-6 z-10 bg-black/40"
         >
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}

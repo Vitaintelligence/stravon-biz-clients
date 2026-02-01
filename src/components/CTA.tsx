@@ -32,7 +32,7 @@ export default function CTA() {
     return (
         <section
             ref={sectionRef}
-            className="relative py-20 px-6 z-10"
+            className="relative py-20 px-6 z-10 bg-black/40"
         >
             <div className="max-w-5xl mx-auto">
                 <div className="cta-content relative p-12 md:p-20 border border-white/20 bg-black">
