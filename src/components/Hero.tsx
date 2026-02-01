@@ -54,7 +54,7 @@ export default function Hero() {
         >
             <div className="max-w-6xl mx-auto text-center z-10">
                 {/* Trust Badge */}
-                <div className="hero-badge inline-flex items-center gap-3 px-5 py-2.5 border border-white/20 bg-white/5 backdrop-blur-sm mb-8">
+                <div className="hero-badge inline-flex items-center gap-3 px-5 py-2.5 border border-white/20 bg-black mb-8">
                     <div className="flex -space-x-2">
                         <img className="w-7 h-7 border-2 border-black object-cover" src="https://i.pravatar.cc/100?u=1" alt="Client" />
                         <img className="w-7 h-7 border-2 border-black object-cover" src="https://i.pravatar.cc/100?u=2" alt="Client" />
@@ -81,19 +81,19 @@ export default function Hero() {
 
                 {/* Social Proof Stats */}
                 <div className="hero-stats flex flex-wrap justify-center gap-6 md:gap-12 mb-12">
-                    <div className="flex items-center gap-3 px-6 py-3 border border-white/10 bg-white/5 backdrop-blur-sm">
+                    <div className="flex items-center gap-3 px-6 py-3 border border-white/20 bg-black">
                         <div className="text-left">
                             <div className="text-2xl font-bold text-white">7 Days</div>
                             <div className="text-xs text-white/50 uppercase tracking-wide">Avg. Delivery</div>
                         </div>
                     </div>
-                    <div className="flex items-center gap-3 px-6 py-3 border border-white/10 bg-white/5 backdrop-blur-sm">
+                    <div className="flex items-center gap-3 px-6 py-3 border border-white/20 bg-black">
                         <div className="text-left">
                             <div className="text-2xl font-bold text-white">₹50-80k</div>
                             <div className="text-xs text-white/50 uppercase tracking-wide">Fixed Price</div>
                         </div>
                     </div>
-                    <div className="flex items-center gap-3 px-6 py-3 border border-white/10 bg-white/5 backdrop-blur-sm">
+                    <div className="flex items-center gap-3 px-6 py-3 border border-white/20 bg-black">
                         <div className="text-left">
                             <div className="text-2xl font-bold text-white">10x</div>
                             <div className="text-xs text-white/50 uppercase tracking-wide">Faster Build</div>
@@ -114,7 +114,7 @@ export default function Hero() {
                     </MagneticButton>
                     <a
                         href="#pricing"
-                        className="px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/20 text-white font-semibold text-lg hover:bg-white/10 transition-all duration-200"
+                        className="px-8 py-4 bg-black border border-white/20 text-white font-semibold text-lg hover:bg-white/5 transition-all duration-200"
                     >
                         View Pricing
                     </a>
