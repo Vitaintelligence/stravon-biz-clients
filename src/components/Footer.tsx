@@ -10,17 +10,17 @@ export default function Footer() {
                     {/* Brand */}
                     <div className="md:col-span-2">
                         <div className="flex items-center gap-2 mb-4">
-                            <img 
-                                src="/logo.svg" 
-                                alt="Stravon" 
-                                width={32} 
+                            <img
+                                src="/logo.svg"
+                                alt="Stravon"
+                                width={32}
                                 height={32}
                                 className="w-8 h-8"
                             />
                             <span className="text-white font-semibold text-xl">Stravon</span>
                         </div>
                         <p className="text-white/50 max-w-md mb-6 text-sm leading-relaxed">
-                            Production-ready applications in 7 days. Modern tech, fixed pricing, zero compromises.
+                            The Ultron model. Seamless background execution, real-time assistance, infinite knowledge.
                         </p>
                     </div>
 

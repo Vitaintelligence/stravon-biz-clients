@@ -10,23 +10,23 @@ gsap.registerPlugin(ScrollTrigger);
 const testimonials = [
     {
         name: "Rahul Sharma",
-        role: "Founder, TechStart",
+        role: "Medical Student",
         image: "https://i.pravatar.cc/150?u=rahul",
-        content: "Stravon delivered our MVP in 6 days. SIX DAYS. Other agencies quoted us 3 months. The quality is insane. We're already generating revenue.",
+        content: "Stravon solved my MCQs in seconds. SECONDS. Other methods took hours. The quality is insane. I'm already outperforming.",
         rating: 5,
     },
     {
         name: "Priya Mehta",
-        role: "CEO, HealthTech Solutions",
+        role: "Software Engineer",
         image: "https://i.pravatar.cc/150?u=priya",
-        content: "Fixed price, no surprises, delivered on time. This is how software development should work. They've set a new standard.",
+        content: "Real-time, no surprises, background execution. This is how learning should work. Stravon has set a new standard.",
         rating: 5,
     },
     {
         name: "Arjun Patel",
-        role: "Product Manager, FinCorp",
+        role: "Data Analyst",
         image: "https://i.pravatar.cc/150?u=arjun",
-        content: "Clean code, modern stack, production-ready. Our CTO was impressed. Worth every rupee. Will definitely work with them again.",
+        content: "Ultron model, seamless background assistance, instant answers. My productivity skyrocketed. Worth every second.",
         rating: 5,
     },
 ];

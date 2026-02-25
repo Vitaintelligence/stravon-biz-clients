@@ -92,15 +92,15 @@ export default function Portfolio() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
           <span className="inline-block px-4 py-2 border border-white/20 bg-black text-white text-xs font-semibold mb-6 uppercase tracking-widest">
-            OUR EXPERTISE
+            THE ULTRON MODEL
           </span>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
-            AI-Powered Applications.
+            AI That Runs In Background.
             <br />
-            Built for Impact.
+            Assists In Real Time.
           </h2>
           <p className="text-xl text-white/60 max-w-2xl mx-auto">
-            Specializing in AI/ML integration, mobile apps, and cutting-edge web platforms
+            Specializing in seamless background assistance and real-time problem solving.
           </p>
         </div>
 
@@ -121,7 +121,7 @@ export default function Portfolio() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
               </div>
-              
+
               <div className="p-6">
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-xs font-semibold text-white/50 uppercase tracking-widest">
@@ -129,15 +129,15 @@ export default function Portfolio() {
                   </span>
                   <ExternalLink className="w-4 h-4 text-white/30 group-hover:text-white/60 transition-colors" />
                 </div>
-                
+
                 <h3 className="text-xl font-bold text-white mb-2">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-white/60 text-sm mb-3 leading-relaxed line-clamp-3">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, i) => (
                     <span
@@ -155,15 +155,15 @@ export default function Portfolio() {
 
         <div className="mt-12 text-center">
           <p className="text-white/60 mb-6 text-sm">
-            These showcase our expertise in AI/ML, mobile development, and modern web technologies. Each application demonstrates our capability to deliver production-grade solutions.
+            These showcase the power of AI assistance. Each application demonstrates our capability to deliver intelligent solutions that save you time and effort.
           </p>
           <a
-            href="https://wa.me/918968037352?text=Hey%20i%20want%20to%20build%20my%20application%0A%0AI'm-%20%0AI'm%20looking%20to%20build-%20%0AMy%20budget-%20"
+            href="https://wa.me/918968037352?text=Hey%20I%20want%20to%20use%20Stravon%20and%20the%20Ultron%20model!"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-4 bg-white text-black font-semibold hover:bg-white/90 transition-colors duration-200"
           >
-            Build Your AI App
+            Get Stravon AI Now
           </a>
         </div>
       </div>

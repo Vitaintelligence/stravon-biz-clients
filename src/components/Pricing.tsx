@@ -9,38 +9,32 @@ gsap.registerPlugin(ScrollTrigger);
 
 const pricingPlans = [
     {
-        name: "Standard Build",
-        price: "₹50,000",
-        duration: "7 Days",
-        description: "Perfect for MVPs, landing pages, and simple web apps",
+        name: "Stravon Free",
+        price: "₹0",
+        duration: "Forever",
+        description: "Perfect for getting started and simple queries",
         features: [
-            "Up to 5 pages/screens",
-            "Responsive design",
-            "Basic animations",
-            "Contact forms",
-            "SEO optimization",
-            "7-day delivery",
-            "1 week support",
+            "Basic AI assistance",
+            "Standard speed",
+            "Limited usage",
+            "Community support",
         ],
-        cta: "Start Building",
+        cta: "Get Started",
         popular: false,
     },
     {
-        name: "Premium Build",
-        price: "₹80,000",
-        duration: "14 Days",
-        description: "For complex apps with custom features and integrations",
+        name: "Stravon Pro",
+        price: "₹999",
+        duration: "Month",
+        description: "For advanced users with Ultron background execution",
         features: [
-            "Up to 15 pages/screens",
-            "Advanced animations",
-            "API integrations",
-            "Database setup",
-            "Admin dashboard",
-            "Authentication system",
-            "14-day delivery",
-            "2 weeks support",
+            "Ultron Model access",
+            "Real-time assistance",
+            "Background execution",
+            "Unlimited usage",
+            "Priority support",
         ],
-        cta: "Go Premium",
+        cta: "Get Pro",
         popular: true,
     },
 ];
@@ -81,10 +75,10 @@ export default function Pricing() {
                     <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
                         Simple Pricing.
                         <br />
-                        No Hidden Fees.
+                        Infinite Knowledge.
                     </h2>
                     <p className="text-xl text-white/60 max-w-2xl mx-auto">
-                        Choose your speed. Pay once. Get your app. That's it.
+                        Choose your plan. Get Stravon. That's it.
                     </p>
                 </div>
 
@@ -130,7 +124,7 @@ export default function Pricing() {
 
                             {/* CTA */}
                             <a
-                                href="https://wa.me/918968037352?text=Hey%20i%20want%20to%20build%20my%20application%0A%0AI'm-%20%0AI'm%20looking%20to%20build-%20%0AMy%20budget-%20"
+                                href="https://wa.me/918968037352?text=Hey%20I%20want%20to%20get%20Stravon%20Pro!"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={`group w-full flex items-center justify-center gap-2 px-6 py-4 font-bold transition-all duration-200 ${plan.popular

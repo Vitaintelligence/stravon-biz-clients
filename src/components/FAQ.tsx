@@ -5,28 +5,28 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    question: "How can you deliver in 7 days?",
-    answer: "We've eliminated everything that slows down traditional agencies: endless meetings, bloated teams, and legacy processes. Our small, expert team focuses purely on execution using modern tools and frameworks."
+    question: "How does Stravon solve problems so fast?",
+    answer: "Stravon AI uses the latest Ultron model to process and resolve queries in real-time, working seamlessly in the background."
   },
   {
-    question: "What's included in the fixed price?",
-    answer: "Everything: design, development, testing, deployment, and 1-2 weeks of post-launch support. No hidden costs, no surprise charges. What we quote is what you pay."
+    question: "What's included in Stravon Pro?",
+    answer: "Unlimited access to the Ultron model, real-time background execution, priority support, and instant problem-solving capabilities."
   },
   {
-    question: "What if I need changes after launch?",
-    answer: "Minor tweaks during the support period are included. For major changes or new features, we offer maintenance packages starting at ₹10k/month."
+    question: "Can Stravon handle complex questions?",
+    answer: "Yes, the Ultron model is designed to handle intricate problems and provide accurate, instant solutions across various subjects."
   },
   {
-    question: "Do you work with startups?",
-    answer: "Absolutely. 80% of our clients are startups and founders who need to move fast. We understand the urgency and budget constraints."
+    question: "Is it just for MCQs?",
+    answer: "No, while it excels at MCQs, Stravon is a comprehensive AI assistant capable of automating any tedious knowledge-based labor."
   },
   {
-    question: "What technologies do you use?",
-    answer: "Next.js, React, TypeScript, Tailwind CSS, and modern deployment platforms like Vercel. The same stack used by companies like Airbnb, Netflix, and Uber."
+    question: "How does background execution work?",
+    answer: "Stravon runs seamlessly without interrupting your workflow. It analyzes screen context or inputted data in real time."
   },
   {
-    question: "Can you handle complex applications?",
-    answer: "Yes. Complex apps take 14 days instead of 7. We've built everything from SaaS platforms to e-commerce sites to internal tools."
+    question: "Is Stravon future-proof?",
+    answer: "Absolutely. We continuously iterate on the Ultron model to ensure it remains the most advanced AI assistant available."
   },
 ];
 

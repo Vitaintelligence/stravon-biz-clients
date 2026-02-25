@@ -10,27 +10,27 @@ gsap.registerPlugin(ScrollTrigger);
 const features = [
     {
         number: "01",
-        title: "Lightning Fast Delivery",
-        description: "7-day turnaround for standard apps. 14 days for complex systems. We don't waste time on meetings—we build.",
-        stat: "7 Days",
+        title: "Instant Solutions",
+        description: "Real-time assistance for any problem. We don't waste time—Ai solves it.",
+        stat: "Real-time",
     },
     {
         number: "02",
-        title: "Production-Ready Code",
-        description: "Clean, scalable, maintainable. Built with modern frameworks. No technical debt. Ready to scale from day one.",
-        stat: "100% Quality",
+        title: "Background Execution",
+        description: "Runs seamlessly in the background while you focus on what matters. No interruptions.",
+        stat: "Seamless",
     },
     {
         number: "03",
-        title: "Modern Tech Stack",
-        description: "Next.js, React, TypeScript, Tailwind. The same stack used by billion-dollar companies. Future-proof.",
-        stat: "Latest Tech",
+        title: "The Ultron Model",
+        description: "Powered by the latest Ultron model. The same AI used by top professionals. Future-proof.",
+        stat: "Advanced AI",
     },
     {
         number: "04",
-        title: "Fixed Price Guarantee",
-        description: "₹50k-₹80k. No hidden costs. No scope creep charges. What we quote is what you pay. Period.",
-        stat: "No Surprises",
+        title: "Learn Ai. Not MCQs.",
+        description: "Stop grinding through outdated methods. Embrace the future of problem-solving.",
+        stat: "Smart Choice",
     },
 ];
 
@@ -69,11 +69,11 @@ export default function Features() {
                     </span>
                     <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
                         <TextReveal delay={0.2}>
-                            Built Different Delivered Faster
+                            Work Smarter Not Harder
                         </TextReveal>
                     </h2>
                     <p className="text-xl text-white/60 max-w-2xl mx-auto">
-                        We've eliminated everything that slows down traditional agencies. What's left? Pure execution.
+                        We've eliminated everything that slows you down. What's left? Pure Ai assistance.
                     </p>
                 </div>
 

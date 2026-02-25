@@ -40,42 +40,33 @@ export default function CTA() {
                         {/* Urgency Badge */}
                         <div className="inline-flex items-center gap-2 px-4 py-2 border border-white/30 bg-black mb-8">
                             <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-                            <span className="text-white text-sm font-semibold uppercase tracking-wide">Only 3 Slots Left This Month</span>
+                            <span className="text-white text-sm font-semibold uppercase tracking-wide">Stravon AI is active</span>
                         </div>
 
                         {/* Headline */}
                         <h2 className="text-4xl md:text-7xl font-black text-white mb-6 tracking-tight leading-[1.1]">
                             <TextReveal delay={0.2}>
-                                Ready to Ship Your Next App
+                                Ready to Learn Ai Itself?
                             </TextReveal>
                         </h2>
 
                         {/* Subheadline */}
                         <p className="text-xl md:text-2xl text-white/70 mb-12 max-w-2xl mx-auto">
-                            Stop waiting. Start building. Get your production-ready app in 7 days.
+                            Stop grinding. Start solving. Get the Ultron model running in the background.
                         </p>
 
                         {/* CTA Buttons with MagneticButton */}
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
                             <MagneticButton
-                                href="https://wa.me/918968037352?text=Hey%20i%20want%20to%20build%20my%20application%0A%0AI'm-%20%0AI'm%20looking%20to%20build-%20%0AMy%20budget-%20"
+                                href="https://wa.me/918968037352?text=Hey%20I%20want%20to%20use%20Stravon%20and%20the%20Ultron%20model!"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group w-full sm:w-auto px-10 py-5 bg-white text-black font-bold text-lg hover:bg-white/90 transition-all duration-200 flex items-center justify-center gap-3 cursor-pointer"
                             >
                                 <MessageCircle className="w-5 h-5" />
-                                Start on WhatsApp
+                                Get Stravon Now
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </MagneticButton>
-                            <a
-                                href="https://calendly.com/stravon"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="w-full sm:w-auto px-10 py-5 bg-black border border-white/20 text-white font-semibold text-lg hover:bg-white/5 transition-all duration-200 flex items-center justify-center gap-3"
-                            >
-                                <Calendar className="w-5 h-5" />
-                                Book a Call
-                            </a>
                         </div>
 
                         {/* Trust Indicators */}

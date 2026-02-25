@@ -33,10 +33,10 @@ export default function Navbar() {
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
                     <a href="#hero" className="flex items-center gap-2">
-                        <img 
-                            src="/logo.svg" 
-                            alt="Stravon" 
-                            width={32} 
+                        <img
+                            src="/logo.svg"
+                            alt="Stravon"
+                            width={32}
                             height={32}
                             className="w-8 h-8"
                         />
@@ -59,12 +59,12 @@ export default function Navbar() {
                     {/* CTA Button */}
                     <div className="hidden md:block">
                         <a
-                            href="https://wa.me/918968037352?text=Hey%20i%20want%20to%20build%20my%20application%0A%0AI'm-%20%0AI'm%20looking%20to%20build-%20%0AMy%20budget-%20"
+                            href="https://wa.me/918968037352?text=Hey%20I%20want%20to%20use%20Stravon%20and%20the%20Ultron%20model!"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-5 py-2 bg-white text-black text-sm font-medium hover:bg-white/90 transition-colors duration-200"
                         >
-                            Start Project
+                            Get Stravon AI
                         </a>
                     </div>
 
@@ -93,12 +93,12 @@ export default function Navbar() {
                             </a>
                         ))}
                         <a
-                            href="https://wa.me/918968037352?text=Hey%20i%20want%20to%20build%20my%20application%0A%0AI'm-%20%0AI'm%20looking%20to%20build-%20%0AMy%20budget-%20"
+                            href="https://wa.me/918968037352?text=Hey%20I%20want%20to%20use%20Stravon%20and%20the%20Ultron%20model!"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="block w-full text-center px-5 py-3 bg-white text-black text-sm font-medium mt-4"
                         >
-                            Start Project
+                            Get Stravon AI
                         </a>
                     </div>
                 </div>

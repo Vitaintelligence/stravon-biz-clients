@@ -9,27 +9,27 @@ gsap.registerPlugin(ScrollTrigger);
 const steps = [
   {
     number: "01",
-    title: "Discovery Call",
-    description: "15-minute call to understand your vision, requirements, and timeline. No fluff, just facts.",
-    duration: "Day 1"
+    title: "The Problem",
+    description: "You face a problem. MCQs, labour work, or just something you don't know. No fluff, just facts.",
+    duration: "0s"
   },
   {
     number: "02",
-    title: "Design & Planning",
-    description: "We create wireframes and technical architecture. You approve, we proceed.",
-    duration: "Day 1-2"
+    title: "The Ultron Model",
+    description: "Stravon AI analyzes the problem in real-time.",
+    duration: "1s"
   },
   {
     number: "03",
-    title: "Development Sprint",
-    description: "Rapid development with daily updates. You see progress in real-time.",
-    duration: "Day 2-6"
+    title: "Background Execution",
+    description: "The AI works seamlessly in the background to assist you.",
+    duration: "2s"
   },
   {
     number: "04",
-    title: "Testing & Launch",
-    description: "Rigorous testing, final tweaks, and deployment. Your app goes live.",
-    duration: "Day 7"
+    title: "Instant Solution",
+    description: "You get the right answer immediately. No grinding.",
+    duration: "3s"
   },
 ];
 
@@ -62,12 +62,12 @@ export default function Process() {
             OUR PROCESS
           </span>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
-            From Idea to Launch
+            From Problem to Solution
             <br />
-            In 7 Days
+            In Seconds
           </h2>
           <p className="text-xl text-white/60 max-w-2xl mx-auto">
-            A streamlined process designed for speed without sacrificing quality
+            A streamlined ai designed for instant assistance without sacrificing quality
           </p>
         </div>
 

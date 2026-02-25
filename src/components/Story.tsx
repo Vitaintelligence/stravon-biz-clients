@@ -42,22 +42,22 @@ export default function Story() {
 
                     <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 tracking-tight leading-tight">
                         <TextReveal delay={0.2}>
-                            We Got Tired of Slow Agencies
+                            We Got Tired of Labour Work
                         </TextReveal>
                     </h2>
 
                     <div className="space-y-6 text-lg md:text-xl text-white/70 leading-relaxed">
                         <p>
-                            Traditional agencies take 3-6 months to build what we deliver in 7 days.
-                            They charge ₹5-10 lakhs for what we do at ₹50-80k.
+                            Traditional learning takes months to master what Ai does in seconds.
+                            Why do labour work over MCQs when Ai can already do it all?
                         </p>
                         <p>
                             <span className="text-white font-semibold">Why?</span> Because they're stuck in outdated processes.
-                            Endless meetings. Bloated teams. Legacy tech.
+                            Endless studying. Bloated curriculums. Legacy methods.
                         </p>
                         <p>
-                            We stripped away everything that doesn't add value. What's left is pure execution.
-                            <span className="text-white font-semibold"> Modern stack. Small team. Fast delivery.</span>
+                            We stripped away everything that doesn't add value. What's left is pure efficiency.
+                            <span className="text-white font-semibold"> Learn Ai. Not MCQs.</span>
                         </p>
                         <p className="text-2xl md:text-3xl font-bold text-white pt-8">
                             That's the Stravon difference.
@@ -76,13 +76,13 @@ export default function Story() {
                             <div className="text-4xl md:text-5xl font-black text-white mb-2">
                                 <Counter to={50} suffix="+" duration={2} />
                             </div>
-                            <div className="text-sm text-white/60 uppercase tracking-wide">Apps Delivered</div>
+                            <div className="text-sm text-white/60 uppercase tracking-wide">AI Models Iterated</div>
                         </div>
                         <div>
                             <div className="text-4xl md:text-5xl font-black text-white mb-2">
                                 <Counter to={100} suffix="%" duration={2} />
                             </div>
-                            <div className="text-sm text-white/60 uppercase tracking-wide">Client Satisfaction</div>
+                            <div className="text-sm text-white/60 uppercase tracking-wide">Time Saved</div>
                         </div>
                     </div>
                 </div>

@@ -52,51 +52,49 @@ export default function Hero() {
             id="hero"
             className="relative min-h-screen flex items-center justify-center px-6 pt-20 pb-12"
         >
-            <div className="max-w-6xl mx-auto text-center z-10">
+            <div className="max-w-6xl mx-auto text-center z-10 flex flex-col items-center">
                 {/* Trust Badge */}
-                <div className="hero-badge inline-flex items-center gap-3 px-5 py-2.5 border border-white/20 bg-black mb-8">
-                    <div className="flex -space-x-2">
-                        <img className="w-7 h-7 border-2 border-black object-cover" src="https://i.pravatar.cc/100?u=1" alt="Client" />
-                        <img className="w-7 h-7 border-2 border-black object-cover" src="https://i.pravatar.cc/100?u=2" alt="Client" />
-                        <img className="w-7 h-7 border-2 border-black object-cover" src="https://i.pravatar.cc/100?u=3" alt="Client" />
-                    </div>
-                    <span className="text-xs font-semibold text-white/80 tracking-wide uppercase">Trusted by 50+ Founders</span>
+                <div className="hero-badge inline-flex items-center gap-3 px-5 py-2.5 border border-white/20 bg-black mb-8 rounded-full">
+                    <span className="text-xs font-semibold text-white/80 tracking-wide uppercase">The Latest — Ultron Model</span>
                 </div>
 
                 {/* Main Headline with LineShadowText */}
-                <h1 className="hero-title text-6xl sm:text-7xl md:text-9xl font-bold tracking-tighter leading-[0.9] mb-8">
+                <h1 className="hero-title text-5xl sm:text-7xl md:text-9xl font-bold tracking-tighter leading-[0.9] mb-8">
                     <LineShadowText shadowColor="rgba(255,255,255,0.3)" className="text-white">
-                        SHIP YOUR APP
+                        LEARN Ai
                     </LineShadowText>
                     <br />
-                    <span className="text-white">IN 7 DAYS</span>
+                    <span className="text-white">NOT MCQs.</span>
                 </h1>
 
                 {/* Value Proposition with TextReveal */}
                 <div className="mb-12">
                     <TextReveal className="text-xl sm:text-2xl md:text-3xl text-white/60 font-light max-w-3xl mx-auto leading-relaxed" delay={0.8}>
-                        While others take months we deliver production-ready apps in a week No compromises No delays
+                        Why do labour work over MCQs when Ai can already do it all. Use Stravon.
                     </TextReveal>
+                    <p className="mt-4 text-sm md:text-lg text-white/40 italic">
+                        (This is an ai that runs in background and assists the user in real time)
+                    </p>
                 </div>
 
                 {/* Social Proof Stats */}
                 <div className="hero-stats flex flex-wrap justify-center gap-6 md:gap-12 mb-12">
                     <div className="flex items-center gap-3 px-6 py-3 border border-white/20 bg-black">
                         <div className="text-left">
-                            <div className="text-2xl font-bold text-white">7 Days</div>
-                            <div className="text-xs text-white/50 uppercase tracking-wide">Avg. Delivery</div>
+                            <div className="text-2xl font-bold text-white">Background</div>
+                            <div className="text-xs text-white/50 uppercase tracking-wide">Runs seamlessly</div>
                         </div>
                     </div>
                     <div className="flex items-center gap-3 px-6 py-3 border border-white/20 bg-black">
                         <div className="text-left">
-                            <div className="text-2xl font-bold text-white">₹50-80k</div>
-                            <div className="text-xs text-white/50 uppercase tracking-wide">Fixed Price</div>
+                            <div className="text-2xl font-bold text-white">Real-time</div>
+                            <div className="text-xs text-white/50 uppercase tracking-wide">Assists user</div>
                         </div>
                     </div>
                     <div className="flex items-center gap-3 px-6 py-3 border border-white/20 bg-black">
                         <div className="text-left">
-                            <div className="text-2xl font-bold text-white">10x</div>
-                            <div className="text-xs text-white/50 uppercase tracking-wide">Faster Build</div>
+                            <div className="text-2xl font-bold text-white">Ultron</div>
+                            <div className="text-xs text-white/50 uppercase tracking-wide">Latest AI model</div>
                         </div>
                     </div>
                 </div>
@@ -104,12 +102,12 @@ export default function Hero() {
                 {/* Primary CTA with MagneticButton */}
                 <div className="hero-cta flex flex-col sm:flex-row items-center justify-center gap-4">
                     <MagneticButton
-                        href="https://wa.me/918968037352?text=Hey%20i%20want%20to%20build%20my%20application%0A%0AI'm-%20%0AI'm%20looking%20to%20build-%20%0AMy%20budget-%20"
+                        href="https://wa.me/918968037352?text=Hey%20I%20want%20to%20use%20Stravon%20and%20the%20Ultron%20model!"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group px-8 py-4 bg-white text-black font-bold text-lg hover:bg-white/90 transition-all duration-200 flex items-center gap-3 cursor-pointer"
                     >
-                        Start Your Project Now
+                        Get Stravon Now
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </MagneticButton>
                     <a
@@ -123,7 +121,7 @@ export default function Hero() {
                 {/* Urgency Indicator */}
                 <p className="mt-8 text-sm text-white/40 uppercase tracking-widest">
                     <span className="inline-block w-2 h-2 bg-white rounded-full animate-pulse mr-2"></span>
-                    3 slots available this month
+                    Stravon AI is active
                 </p>
             </div>
         </section>

@@ -29,26 +29,26 @@ export default function FloatingWhatsApp() {
                         <X className="w-4 h-4" />
                     </button>
                     <div className="flex items-start gap-3">
-                        <img 
-                            src="/logo.svg" 
-                            alt="Stravon" 
-                            width={32} 
+                        <img
+                            src="/logo.svg"
+                            alt="Stravon"
+                            width={32}
                             height={32}
                             className="w-8 h-8 flex-shrink-0"
                         />
                         <div>
                             <div className="font-medium text-black mb-1 text-sm">Stravon</div>
                             <p className="text-sm text-black/60 mb-3 leading-relaxed">
-                                Ready to build your app in 7 days?
+                                Ready to use Stravon AI?
                             </p>
                             <a
-                                href="https://wa.me/918968037352?text=Hey%20i%20want%20to%20build%20my%20application%0A%0AI'm-%20%0AI'm%20looking%20to%20build-%20%0AMy%20budget-%20"
+                                href="https://wa.me/918968037352?text=Hey%20I%20want%20to%20use%20Stravon%20and%20the%20Ultron%20model!"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 px-4 py-2 bg-black text-white text-xs font-medium hover:bg-black/90 transition-colors"
                             >
                                 <MessageCircle className="w-3.5 h-3.5" />
-                                Chat on WhatsApp
+                                Get Stravon Now
                             </a>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ export default function FloatingWhatsApp() {
                 className="group relative w-14 h-14 bg-white hover:bg-white/90 shadow-xl flex items-center justify-center transition-all duration-200"
             >
                 <MessageCircle className="w-6 h-6 text-black relative z-10" />
-                
+
                 {/* Notification Badge */}
                 <span className="absolute -top-1 -right-1 w-4 h-4 bg-black flex items-center justify-center text-white text-[10px] font-medium">
                     1

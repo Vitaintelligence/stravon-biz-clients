@@ -20,13 +20,13 @@ export default function TechStack() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
           <span className="inline-block px-4 py-2 border border-white/20 bg-black text-white text-xs font-semibold uppercase tracking-widest">
-            TECH STACK
+            BACKBONE
           </span>
           <h2 className="text-2xl md:text-3xl font-bold text-white mt-6 mb-3">
-            Built with Modern Technology
+            Powered by Next-Gen AI
           </h2>
           <p className="text-white/60 text-sm">
-            The same stack used by billion-dollar companies
+            The Ultron model leverages the best technologies
           </p>
         </div>
 

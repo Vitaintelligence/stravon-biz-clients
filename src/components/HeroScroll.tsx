@@ -178,7 +178,7 @@ export default function HeroScroll() {
                         <img className="w-6 h-6 rounded-full border-2 border-black object-cover" src="https://i.pravatar.cc/100?u=5" alt="Founder" />
                         <img className="w-6 h-6 rounded-full border-2 border-black object-cover" src="https://i.pravatar.cc/100?u=6" alt="Founder" />
                     </div>
-                    <span className="text-[10px] md:text-xs font-semibold text-white/80 tracking-widest uppercase italic">The Founders' Choice</span>
+                    <span className="text-[10px] md:text-xs font-semibold text-white/80 tracking-widest uppercase italic">The Latest — Ultron Model</span>
                 </div>
 
                 <h1 className="text-[18vw] md:text-[14vw] font-black tracking-tighter leading-none mb-2">
@@ -187,7 +187,7 @@ export default function HeroScroll() {
 
                 <div className="flex flex-col items-center space-y-4 max-w-4xl w-full">
                     <p className="text-xl md:text-4xl font-medium tracking-tight text-center text-white italic">
-                        "We build apps and stuff. <span className="text-white/40 not-italic">Fast.</span>"
+                        "<span className="text-white/40 not-italic">The world is changing.</span>"
                     </p>
 
                     <div className="h-px w-24 bg-white/20"></div>
@@ -195,15 +195,15 @@ export default function HeroScroll() {
                     <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-sm md:text-lg font-light tracking-[0.2em] uppercase text-white/60">
                         <span className="flex items-center gap-2">
                             <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></span>
-                            7 Day Delivery
+                            Learn Ai.
                         </span>
                         <span className="flex items-center gap-2">
                             <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
-                            ₹50k - ₹80k
+                            Not MCQs.
                         </span>
                         <span className="flex items-center gap-2">
                             <span className="w-1.5 h-1.5 rounded-full bg-purple-500 animate-pulse"></span>
-                            100x Better
+                            Use Stravon.
                         </span>
                     </div>
                 </div>
@@ -218,25 +218,25 @@ export default function HeroScroll() {
             <div ref={missionRef} className="fixed top-0 left-0 w-full h-full z-10 flex items-center justify-center pointer-events-none opacity-0 invisible px-4">
                 <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-8 md:p-20 rounded-[2.5rem] max-w-4xl text-center text-white">
                     <h2 className="text-4xl md:text-7xl font-bold mb-6 tracking-tighter">
-                        The 7-Day <br /> Standard.
+                        Why do Labour <br /> Work?
                     </h2>
                     <p className="text-lg md:text-3xl font-light text-white/70 leading-relaxed">
-                        From vision to production in just 7 days. <br />
-                        Complex feats in 14. We don't just build, <br />
-                        <span className="text-white font-medium italic underline decoration-blue-500 underline-offset-8">we outpace.</span>
+                        Why do labour work over MCQs <br />
+                        when Ai can already do it all. <br />
+                        <span className="text-white font-medium italic underline decoration-blue-500 underline-offset-8">Learn Ai. Not MCQs.</span>
                     </p>
                 </div>
             </div>
 
             {/* 3. Services Overlay */}
             <div ref={servicesRef} className="fixed top-0 left-0 w-full h-full z-10 flex flex-col items-center justify-center pointer-events-none opacity-0 invisible text-white px-4">
-                <h3 className="text-sm font-medium uppercase tracking-[0.4em] mb-16 text-white/40">Our Efficiency</h3>
+                <h3 className="text-sm font-medium uppercase tracking-[0.4em] mb-16 text-white/40">The Ultron Model</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-24 md:gap-y-16 max-w-6xl">
                     {[
-                        { title: "7 Days", desc: "Average build time" },
-                        { title: "50k - 80k", desc: "Ultra affordable pricing" },
-                        { title: "10x Fast", desc: "Unmatched development speed" },
-                        { title: "Premium", desc: "100x better working apps" }
+                        { title: "Ultron", desc: "The latest AI model" },
+                        { title: "Background", desc: "Runs seamlessly in the background" },
+                        { title: "Real-time", desc: "Assists the user in real time" },
+                        { title: "Stravon", desc: "The Ultimate AI Assistant" }
                     ].map((item, i) => (
                         <div key={i} className="service-item flex flex-col items-center md:items-start">
                             <div className="text-5xl md:text-8xl font-bold tracking-tighter mb-2">{item.title}</div>
@@ -250,21 +250,21 @@ export default function HeroScroll() {
             {/* 4. CTA Overlay */}
             <div ref={ctaRef} className="fixed top-0 left-0 w-full h-full z-10 flex flex-col items-center justify-center pointer-events-auto opacity-0 invisible text-white px-4 text-center">
                 <h2 className="text-6xl md:text-[8rem] font-bold tracking-tighter mb-4 leading-[0.9]">
-                    Build Your <br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Application</span>
+                    Use <br />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Stravon</span>
                 </h2>
                 <p className="text-xl md:text-2xl font-light text-white/60 mb-12 max-w-xl">
-                    Ultra affordable. Professional execution. <br />
-                    Ready in 7 days.
+                    The latest- Ultron model. <br />
+                    (This is an ai that runs in background and assists the user in real time)
                 </p>
 
                 <a
-                    href="https://wa.me/918968037352?text=Hey%20i%20want%20to%20build%20my%20application%0A%0AI'm-%20%0AI'm%20looking%20to%20build-%20%0AMy%20budget-%20"
+                    href="https://wa.me/918968037352?text=Hey%20I%20want%20to%20use%20Stravon%20and%20the%20Ultron%20model!"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group relative bg-white text-black px-12 py-6 rounded-2xl text-2xl font-bold hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center gap-4 shadow-[0_0_40px_rgba(255,255,255,0.2)]"
                 >
-                    Start Inquiring Direct
+                    Get Stravon Now
                     <svg className="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
